@@ -1,0 +1,19 @@
+# Local Power BI state and cached data
+**/.pbi/
+*.pbix
+*.pbit
+*.abf
+*.tmp
+*.log
+*.lock
+# Credentials and local overrides
+.env
+.env.*
+!.env.example
+*.local.json
+# Python and OS state
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db

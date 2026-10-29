@@ -1,0 +1,74 @@
+-- Reference definitions. These measures are already installed in model.bim.
+-- Amounts use the source currency, which was not specified.
+
+Total Revenue =
+SUM ( Marketing[revenue] )
+
+Total Spend =
+SUM ( Marketing[spend] )
+
+Total Impressions =
+SUM ( Marketing[impressions] )
+
+Total Clicks =
+SUM ( Marketing[clicks] )
+
+Total Conversions =
+SUM ( Marketing[conversions] )
+
+Records =
+COUNTROWS ( Marketing )
+
+ROAS =
+DIVIDE ( [Total Revenue], [Total Spend] )
+
+CTR =
+DIVIDE ( [Total Clicks], [Total Impressions] )
+
+CVR =
+DIVIDE ( [Total Conversions], [Total Clicks] )
+
+CPC =
+DIVIDE ( [Total Spend], [Total Clicks] )
+
+CPA =
+DIVIDE ( [Total Spend], [Total Conversions] )
+
+Paid Spend =
+CALCULATE ( [Total Spend], KEEPFILTERS ( Marketing[channel_type] = "Paid" ) )
+
+Paid Revenue =
+CALCULATE ( [Total Revenue], KEEPFILTERS ( Marketing[channel_type] = "Paid" ) )
+
+Paid Clicks =
+CALCULATE ( [Total Clicks], KEEPFILTERS ( Marketing[channel_type] = "Paid" ) )
+
+Paid Conversions =
+CALCULATE ( [Total Conversions], KEEPFILTERS ( Marketing[channel_type] = "Paid" ) )
+
+Paid ROAS =
+DIVIDE ( [Paid Revenue], [Paid Spend] )
+
+Paid CVR =
+DIVIDE ( [Paid Conversions], [Paid Clicks] )
+
+Paid CPA =
+DIVIDE ( [Paid Spend], [Paid Conversions] )
+
+Organic Revenue =
+CALCULATE ( [Total Revenue], KEEPFILTERS ( Marketing[channel_type] = "Organic" ) )
+
+Organic Revenue Share =
+DIVIDE ( [Organic Revenue], [Total Revenue] )
+
+Zero Return Spend =
+CALCULATE ( [Total Spend], KEEPFILTERS ( Marketing[spend] > 0 ), KEEPFILTERS ( Marketing[revenue] = 0 ) )
+
+Zero Return Spend Share =
+DIVIDE ( [Zero Return Spend], [Paid Spend] )
+
+CVR Mismatch Rows =
+COUNTROWS ( FILTER ( Marketing, Marketing[clicks] > 0 && ABS ( DIVIDE ( Marketing[conversions], Marketing[clicks] ) - Marketing[conversion_rate] ) > 0.01 ) )
+
+CVR Mismatch Share =
+DIVIDE ( [CVR Mismatch Rows], [Records] )

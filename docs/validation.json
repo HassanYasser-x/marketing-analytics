@@ -1,0 +1,28 @@
+{
+  "records": 3000,
+  "date_start": "2025-07-31",
+  "date_end": "2026-07-31",
+  "total_revenue": "1827702.0100",
+  "total_spend": "463281.7500",
+  "paid_revenue": "662536.1900",
+  "paid_roas": "1.430093436661383704408818176",
+  "ctr": "0.02689805255090250772334496342",
+  "cvr": "0.03256408980560276760063585677",
+  "cvr_mismatch_rows": 442,
+  "zero_return_spend": "18609.4000",
+  "exact_duplicate_rows": 0,
+  "category_counts": {
+    "No Spend": 741,
+    "Break-even": 607,
+    "Negative": 612,
+    "Profitable": 489,
+    "Zero Return": 439,
+    "High-performing": 112
+  },
+  "report_pages": 3,
+  "report_visuals": 45,
+  "measures": 24,
+  "validation": "PASS: snapshot equivalence, field references, date relationship, canvas bounds, local-string scan",
+  "desktop_rendering": "Not tested: Power BI Desktop unavailable",
+  "sql_execution": "Not tested: SQL Server unavailable"
+}

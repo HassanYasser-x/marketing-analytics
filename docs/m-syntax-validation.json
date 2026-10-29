@@ -1,0 +1,13 @@
+{
+  "parser": "@microsoft/powerquery-parser",
+  "results": [
+    {
+      "table": "Marketing",
+      "syntax": "PASS"
+    },
+    {
+      "table": "Calendar",
+      "syntax": "PASS"
+    }
+  ]
+}

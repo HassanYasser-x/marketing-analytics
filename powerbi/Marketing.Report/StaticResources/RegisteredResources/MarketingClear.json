@@ -1,0 +1,36 @@
+{
+  "name": "Marketing · Clear",
+  "dataColors": [
+    "#087F8C",
+    "#5069C7",
+    "#D99533",
+    "#65A9B6",
+    "#8E78B5",
+    "#A6B9CB"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#142B40",
+  "tableAccent": "#087F8C",
+  "textClasses": {
+    "callout": {
+      "fontFace": "Segoe UI",
+      "fontSize": 30,
+      "color": "#142B40"
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#142B40"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 11,
+      "color": "#142B40"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#687B8B"
+    }
+  }
+}
