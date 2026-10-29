@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Marketing Analytics · Power BI
 
 A three-page marketing report built from the supplied SQL project and recovered Power BI data: 3,000 records across eight channels from 31 July 2025 to 31 July 2026.
@@ -66,3 +67,6 @@ See [validation details](docs/validation.md), [metric definitions](docs/methodol
 Create an empty GitHub repository, then upload **the contents of this folder**, including the `.gitignore` and `.gitattributes` files. Do not upload the original extracted PBIX internals. This project has not been published to GitHub.
 
 Before public publication, complete the Desktop checks above and replace the static previews with actual report screenshots if desired. The data's original license was not supplied; the data owner should choose the repository license and confirm redistribution rights. No license or invented author attribution has been added.
+=======
+# marketing-analytics
+>>>>>>> 693b784901148a9d0599abe2d88a1fbeb28fc802
